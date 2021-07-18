@@ -1,6 +1,8 @@
 package planner
 
 import (
+	"fmt"
+
 	"github.com/tfmigrator/cli/pkg/config"
 	"github.com/tfmigrator/tfmigrator/tfmigrator"
 )
@@ -13,7 +15,7 @@ func (planner *Planner) Plan(src *tfmigrator.Source) (*tfmigrator.MigratedResour
 	for _, item := range planner.Items {
 		matched, err := item.Rule.Run(src)
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("evaluate the rule: %w", err)
 		}
 		if !matched {
 			continue
@@ -36,7 +38,7 @@ func (planner *Planner) plan(src *tfmigrator.Source, item *config.Item) (*tfmigr
 	if !item.Address.Empty() {
 		s, err := item.Address.Execute(src)
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("evaluate the address: %w", err)
 		}
 		rsc.Address = s
 	}
@@ -44,7 +46,7 @@ func (planner *Planner) plan(src *tfmigrator.Source, item *config.Item) (*tfmigr
 	if !item.Dirname.Empty() {
 		s, err := item.Dirname.Execute(src)
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("evaluate the dirname: %w", err)
 		}
 		rsc.Dirname = s
 	}
@@ -52,7 +54,7 @@ func (planner *Planner) plan(src *tfmigrator.Source, item *config.Item) (*tfmigr
 	if !item.HCLFileBasename.Empty() {
 		s, err := item.HCLFileBasename.Execute(src)
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("evaluate the hcl_file_basename: %w", err)
 		}
 		rsc.HCLFileBasename = s
 	}
@@ -60,7 +62,7 @@ func (planner *Planner) plan(src *tfmigrator.Source, item *config.Item) (*tfmigr
 	if !item.StateBasename.Empty() {
 		s, err := item.StateBasename.Execute(src)
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("evaluate the state_basename: %w", err)
 		}
 		rsc.StateBasename = s
 	}

@@ -1,4 +1,4 @@
-# cli
+# tfmigrator CLI
 
 CLI to migrate Terraform Configuration and State
 

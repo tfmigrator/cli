@@ -19,13 +19,13 @@ import (
 	"github.com/tfmigrator/tfmigrator/tfmigrator/tfstate"
 )
 
-func (ctrl *Controller) Run(ctx context.Context, param *Param) error { //nolint:cyclop
+func (ctrl *Controller) Run(ctx context.Context, param *Param) error { //nolint:funlen
 	text.SetTemplateFunc(func(s string) (*template.Template, error) {
-		return template.New("_").Funcs(sprig.TxtFuncMap()).Parse(s)
+		return template.New("_").Funcs(sprig.TxtFuncMap()).Parse(s) //nolint:wrapcheck
 	})
 	cfg := config.Config{}
 	if err := config.Read(param.ConfigFilePath, &cfg); err != nil {
-		return err
+		return fmt.Errorf("read the configuration file %s: %w", param.ConfigFilePath, err)
 	}
 	pln := &planner.Planner{
 		Items: cfg.Items,
@@ -81,7 +81,7 @@ func (ctrl *Controller) Run(ctx context.Context, param *Param) error { //nolint:
 		},
 		DryRun: param.DryRun,
 	}
-	return runner.Run(ctx, &tfmigrator.RunOpt{
+	return runner.Run(ctx, &tfmigrator.RunOpt{ //nolint:wrapcheck
 		SourceHCLFilePaths: param.HCLFilePaths,
 		SourceStatePath:    param.StatePath,
 	})
