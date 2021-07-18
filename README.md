@@ -17,8 +17,10 @@ Download a binary from the [release page](https://github.com/tfmigrator/cli/rele
 
 ## Index
 
+* [Examples](examples)
 * [Usage](docs/USAGE.md)
 * [Configuration](docs/CONFIGURATION.md)
+* [Change Log](https://github.com/tfmigrator/cli/releases)
 
 ## LICENSE
 
