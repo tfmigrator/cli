@@ -1,4 +1,5 @@
 ---
+project_name: tfmigrator
 archives:
 - name_template: "{{.ProjectName}}_{{.Os}}_{{.Arch}}"
 builds:
