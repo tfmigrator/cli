@@ -19,6 +19,7 @@ type Rule struct {
 	Dirname            *text.Template
 	HCLFileBasename    *text.Template `yaml:"hcl_file_basename"`
 	StateBasename      *text.Template `yaml:"state_file_basename"`
+	Ignored            bool
 	Removed            bool
 	SkipHCLMigration   bool `yaml:"skip_hcl_migration"`
 	SkipStateMigration bool `yaml:"skip_state_migration"`

@@ -20,6 +20,9 @@ func (planner *Planner) Plan(src *tfmigrator.Source) (*tfmigrator.MigratedResour
 		if !matched {
 			continue
 		}
+		if rule.Ignored {
+			return nil, nil
+		}
 		return planner.plan(src, rule)
 	}
 	return nil, nil
