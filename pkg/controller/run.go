@@ -28,7 +28,7 @@ func (ctrl *Controller) Run(ctx context.Context, param *Param) error { //nolint:
 		return fmt.Errorf("read the configuration file %s: %w", param.ConfigFilePath, err)
 	}
 	pln := &planner.Planner{
-		Items: cfg.Items,
+		Rules: cfg.Rules,
 	}
 
 	logger := &tflog.SimpleLogger{}

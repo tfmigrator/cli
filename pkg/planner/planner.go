@@ -8,59 +8,62 @@ import (
 )
 
 type Planner struct {
-	Items []*config.Item
+	Rules []*config.Rule
 }
 
 func (planner *Planner) Plan(src *tfmigrator.Source) (*tfmigrator.MigratedResource, error) {
-	for _, item := range planner.Items {
-		matched, err := item.Rule.Run(src)
+	for _, rule := range planner.Rules {
+		matched, err := rule.If.Run(src)
 		if err != nil {
 			return nil, fmt.Errorf("evaluate the rule: %w", err)
 		}
 		if !matched {
 			continue
 		}
-		return planner.plan(src, item)
+		if rule.Ignored {
+			return nil, nil
+		}
+		return planner.plan(src, rule)
 	}
 	return nil, nil
 }
 
-func (planner *Planner) plan(src *tfmigrator.Source, item *config.Item) (*tfmigrator.MigratedResource, error) {
+func (planner *Planner) plan(src *tfmigrator.Source, rule *config.Rule) (*tfmigrator.MigratedResource, error) {
 	rsc := &tfmigrator.MigratedResource{
-		Removed:            item.Removed,
-		SkipHCLMigration:   item.SkipHCLMigration,
-		SkipStateMigration: item.SkipStateMigration,
+		Removed:            rule.Removed,
+		SkipHCLMigration:   rule.SkipHCLMigration,
+		SkipStateMigration: rule.SkipStateMigration,
 	}
-	if item.Removed {
+	if rule.Removed {
 		return rsc, nil
 	}
 
-	if !item.Address.Empty() {
-		s, err := item.Address.Execute(src)
+	if !rule.Address.Empty() {
+		s, err := rule.Address.Execute(src)
 		if err != nil {
 			return nil, fmt.Errorf("evaluate the address: %w", err)
 		}
 		rsc.Address = s
 	}
 
-	if !item.Dirname.Empty() {
-		s, err := item.Dirname.Execute(src)
+	if !rule.Dirname.Empty() {
+		s, err := rule.Dirname.Execute(src)
 		if err != nil {
 			return nil, fmt.Errorf("evaluate the dirname: %w", err)
 		}
 		rsc.Dirname = s
 	}
 
-	if !item.HCLFileBasename.Empty() {
-		s, err := item.HCLFileBasename.Execute(src)
+	if !rule.HCLFileBasename.Empty() {
+		s, err := rule.HCLFileBasename.Execute(src)
 		if err != nil {
 			return nil, fmt.Errorf("evaluate the hcl_file_basename: %w", err)
 		}
 		rsc.HCLFileBasename = s
 	}
 
-	if !item.StateBasename.Empty() {
-		s, err := item.StateBasename.Execute(src)
+	if !rule.StateBasename.Empty() {
+		s, err := rule.StateBasename.Execute(src)
 		if err != nil {
 			return nil, fmt.Errorf("evaluate the state_basename: %w", err)
 		}
