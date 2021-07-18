@@ -1,0 +1,3 @@
+items:
+- rule: Resource.Address == "null_resource.foo"
+  address: null_resource.bar
