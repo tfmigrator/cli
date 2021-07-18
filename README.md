@@ -5,7 +5,8 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/tfmigrator/cli.svg)](https://github.com/tfmigrator/cli)
 [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/tfmigrator/cli/main/LICENSE)
 
-CLI to migrate Terraform Configuration and State
+CLI to migrate Terraform Configuration and State.
+The migration feature is implemented with [tfmigrator/tfmigrator](https://github.com/tfmigrator/tfmigrator), so please see the document of [tfmigrator/tfmigrator](https://github.com/tfmigrator/tfmigrator) too.
 
 ## Requirement
 
