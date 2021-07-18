@@ -10,11 +10,11 @@ import (
 )
 
 type Config struct {
-	Items []*Item
+	Rules []*Rule
 }
 
-type Item struct {
-	Rule               *expr.Bool
+type Rule struct {
+	If                 *expr.Bool
 	Address            *text.Template
 	Dirname            *text.Template
 	HCLFileBasename    *text.Template `yaml:"hcl_file_basename"`

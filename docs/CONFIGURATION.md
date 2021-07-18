@@ -2,13 +2,13 @@
 
 path | type | required | default | description
 --- | --- | --- | --- | ---
-.items | item | true | | 
+.rules | rule | true | | 
 
-## type: item
+## type: rule
 
 path | type | required | default | example | description
 --- | --- | --- | --- | --- | ---
-rule | bool expression | true | | `Resource.Type == "null_resource"` | If the result is `true`, the resource is proceeded by the item
+if | bool expression | true | | `Resource.Type == "null_resource"` | If the result is `true`, the resource is proceeded by the item
 address | template | false | no change | `{{.Resource.Type}}.{{.Resource.Name \| replace "-" "_"}}` |
 dirname | template | false | no change | `foo` |
 hcl_file_basename | template | false | no change | `{{.Resource.Type}}.tf` |
