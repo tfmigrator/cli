@@ -4,21 +4,31 @@ import (
 	"context"
 	"io"
 
-	"github.com/tfmigrator/cli/pkg/constant"
 	"github.com/urfave/cli/v2"
 )
 
+type LDFlags struct {
+	Version string
+	Commit  string
+	Date    string
+}
+
+func (flags *LDFlags) AppVersion() string {
+	return flags.Version + " (" + flags.Commit + ")"
+}
+
 type Runner struct {
-	Stdin  io.Reader
-	Stdout io.Writer
-	Stderr io.Writer
+	Stdin   io.Reader
+	Stdout  io.Writer
+	Stderr  io.Writer
+	LDFlags *LDFlags
 }
 
 func (runner *Runner) Run(ctx context.Context, args ...string) error {
 	app := cli.App{
 		Name:    "tfmigrator",
 		Usage:   "Migrate Terraform Configuration and State. https://github.com/tfmigrator/cli",
-		Version: constant.Version,
+		Version: runner.LDFlags.AppVersion(),
 		Commands: []*cli.Command{
 			{
 				Name:   "run",
