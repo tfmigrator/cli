@@ -1,0 +1,39 @@
+---
+name: integration-test
+on:
+  push:
+    branches: [main]
+    tags: [v*]
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-go@v2
+      with:
+        go-version: '1.17'
+    - run: go build -o /usr/local/bin/tfmigrator ./cmd/tfmigrator
+
+    - uses: int128/aqua-action@v1
+
+    - run: tfenv install
+      working-directory: examples/example1
+    - run: terraform init
+      working-directory: examples/example1
+    - run: terraform apply -auto-approve
+      working-directory: examples/example1
+    - run: tfmigrator run -dry-run main.tf
+      working-directory: examples/example1
+    - run: tfmigrator run main.tf
+      working-directory: examples/example1
+    - run: terraform plan
+      working-directory: examples/example1
+    - run: terraform state list
+      working-directory: examples/example1
+    - run: git diff .
+      working-directory: examples/example1
