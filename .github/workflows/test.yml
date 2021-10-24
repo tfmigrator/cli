@@ -27,6 +27,21 @@ jobs:
       run: git fetch --tags
     - name: Unshallow
       run: git fetch --prune --unshallow
+    - name: Run GoReleaser (skip publish)
+      uses: goreleaser/goreleaser-action@v2
+      if: "! startsWith(github.ref, 'refs/tags/')"
+      with:
+        version: latest
+        args: release --rm-dist --snapshot
+
+    - name: Generate token
+      id: generate_token
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: tibdex/github-app-token@v1
+      with:
+        app_id: ${{ secrets.APP_ID }}
+        private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@v2
       if: startsWith(github.ref, 'refs/tags/')
@@ -35,9 +50,4 @@ jobs:
         args: release --rm-dist
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Run GoReleaser (skip publish)
-      uses: goreleaser/goreleaser-action@v2
-      if: "! startsWith(github.ref, 'refs/tags/')"
-      with:
-        version: latest
-        args: release --rm-dist --snapshot
+        HOMEBREW_TAP_GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
