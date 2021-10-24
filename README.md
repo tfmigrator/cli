@@ -15,6 +15,11 @@ The migration feature is implemented with [tfmigrator/tfmigrator](https://github
 ## Install
 
 Download a binary from the [release page](https://github.com/tfmigrator/cli/releases).
+You can install tfmigrator with [Homewbrew](https://brew.sh/) too.
+
+```
+$ brew install tfmigrator/cli/tfmigrator
+```
 
 ## Index
 
