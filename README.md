@@ -23,6 +23,10 @@ $ brew install tfmigrator/cli/tfmigrator
 
 You can install tfmigrator with [aqua](https://aquaproj.github.io/) too.
 
+```console
+$ aqua g -i tfmigrator/cli
+```
+
 ## Index
 
 * [Examples](examples)
