@@ -1,13 +1,13 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "github>aquaproj/aqua-renovate-config#0.1.8"
   ],
   "automerge": true,
+  "major": {
+    "automerge": false
+  },
   "packageRules": [
-    {
-      "matchUpdateTypes": ["major"],
-      "automerge": false
-    },
     {
       "matchUpdateTypes": ["digest"],
       "enabled": false

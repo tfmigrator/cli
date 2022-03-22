@@ -1,6 +1,5 @@
 registries:
 - type: standard
-  ref: v0.10.1 # renovate: depName=suzuki-shunsuke/aqua-registry
-
+  ref: v1.9.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: tfutils/tfenv@v2.2.2
+- name: hashicorp/terraform@v1.1.7
