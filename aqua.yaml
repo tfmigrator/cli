@@ -2,4 +2,4 @@ registries:
 - type: standard
   ref: v2.26.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: hashicorp/terraform@v1.2.2
+- name: hashicorp/terraform@v1.2.3
