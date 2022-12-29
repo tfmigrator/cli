@@ -21,7 +21,7 @@ jobs:
 
     - uses: aquaproj/aqua-installer@v1.2.0
       with:
-        aqua_version: v1.26.2
+        aqua_version: v1.27.0
 
     - run: terraform init
       working-directory: examples/example1
