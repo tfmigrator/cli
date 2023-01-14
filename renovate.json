@@ -1,20 +1,7 @@
 {
   "extends": [
     "config:base",
-    "github>aquaproj/aqua-renovate-config#1.5.1"
-  ],
-  "automerge": true,
-  "major": {
-    "automerge": false
-  },
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["digest"],
-      "enabled": false
-    },
-    {
-      "postUpdateOptions": ["gomodTidy"],
-      "matchManagers": ["gomod"]
-    }
+    "github>aquaproj/aqua-renovate-config#1.5.1",
+    "github>suzuki-shunsuke/renovate-config#1.0.0"
   ]
 }
