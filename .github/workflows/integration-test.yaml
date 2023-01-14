@@ -1,22 +1,22 @@
 ---
 name: integration-test
+permissions: {}
 on:
   push:
     branches: [main]
-    tags: [v*]
   pull_request:
     branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
     - uses: actions/checkout@v3
 
     - uses: actions/setup-go@v3
       with:
-        go-version: '1.17'
+        go-version: "1.19.5"
     - run: go build -o /usr/local/bin/tfmigrator ./cmd/tfmigrator
 
     - uses: aquaproj/aqua-installer@v2.0.2
