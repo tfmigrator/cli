@@ -21,11 +21,11 @@ func (planner *Planner) Plan(src *tfmigrator.Source) (*tfmigrator.MigratedResour
 			continue
 		}
 		if rule.Ignored {
-			return nil, nil
+			return nil, nil //nolint:nilnil
 		}
 		return planner.plan(src, rule)
 	}
-	return nil, nil
+	return nil, nil //nolint:nilnil
 }
 
 func (planner *Planner) plan(src *tfmigrator.Source, rule *config.Rule) (*tfmigrator.MigratedResource, error) {
