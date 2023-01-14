@@ -3,7 +3,7 @@ module github.com/tfmigrator/cli
 go 1.16
 
 require (
-	github.com/Masterminds/sprig/v3 v3.2.2
+	github.com/Masterminds/sprig/v3 v3.2.3
 	github.com/hashicorp/terraform-exec v0.17.3
 	github.com/sirupsen/logrus v1.9.0
 	github.com/suzuki-shunsuke/expr-unmarshaler v0.1.0
