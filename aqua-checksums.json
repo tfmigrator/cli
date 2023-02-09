@@ -156,28 +156,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.3.7/terraform_1.3.7_darwin_amd64.zip",
-      "checksum": "884b552db384bf4a2952904cd08db1ef9fec718380152ed95987310bb4fe69ccbbf28ddba467eee22790147519ee7626f2078ab4af0bf05888627730db676f53",
+      "id": "http/releases.hashicorp.com/terraform/1.3.8/terraform_1.3.8_darwin_amd64.zip",
+      "checksum": "2A1176F92D72FE4740F34194A0EA437D7B87CD314C1B243EDD977D6DFC73652237B31474A6F87D1ED7790D7D424563B343339D8743B19F83B325368050D0E78E",
       "algorithm": "sha512"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.3.7/terraform_1.3.7_darwin_arm64.zip",
-      "checksum": "2d84fdf251cafef4c03ddeccae8a394a00efa8585ff4b8856512c024bcd60b23948b64089d5989fab2375747ec85efa33f9507fc6752513a5bd021c57746b632",
+      "id": "http/releases.hashicorp.com/terraform/1.3.8/terraform_1.3.8_darwin_arm64.zip",
+      "checksum": "D250564A38A03169B3D5AA8BA118067947B92DB2E5957583D2A47BB5CDD324AE15A4B290C052A86D81D56934368B3B238AAE846C5D708EF9AFC27B070E16F1D4",
       "algorithm": "sha512"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.3.7/terraform_1.3.7_linux_amd64.zip",
-      "checksum": "f22a957a266c3eebc4f1bc50a9498d1275b4bbb65efb02ff24af7f0ef784fe6a70b4226804364c5ce6dc6c16f084e6a075de8440d551a0ae795c241519f747ef",
+      "id": "http/releases.hashicorp.com/terraform/1.3.8/terraform_1.3.8_linux_amd64.zip",
+      "checksum": "3E698CC6594B11184F27762633F0026BAAF331322E6434A85620444864E68206B1EE21E6120A50ECED07BF8BB9E25561761340FF47CD6FD08C73E8C83D142956",
       "algorithm": "sha512"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.3.7/terraform_1.3.7_linux_arm64.zip",
-      "checksum": "3d2a9b5a1e5aa9e1ca7f2a2f581c9eb2a2ded908905c8fa591d8c86629ed272b8113f8ae54ace44ac032c2ad1d80f5337008a59a2271e36d24e0635b281dd693",
+      "id": "http/releases.hashicorp.com/terraform/1.3.8/terraform_1.3.8_linux_arm64.zip",
+      "checksum": "A4888BC27B6CA40ED4A7EB9E9228A77F017E3C7AFADBAC1024DFB914D7B7182C5E1779C538B9BB846007D0C8C9379CC49FA9F0DE21AC2771830FD65B37F744B2",
       "algorithm": "sha512"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.3.7/terraform_1.3.7_windows_amd64.zip",
-      "checksum": "39603f408beb3092f4712b251bbd336d9574b7e6b90a39b400c98d719a15200c3c5378cf59d842113093499e5918e7cd38c728b1a6da6cffbbe71fcecb8ba0fe",
+      "id": "http/releases.hashicorp.com/terraform/1.3.8/terraform_1.3.8_windows_amd64.zip",
+      "checksum": "5CE5017FBAFD00CFBC21880865767404071616BA45CA9C3CA9E6591EB95A906720AD001A23BEFE30F7698E7DB300628490F7A5F19D6253D260302DB8CC4E3E95",
       "algorithm": "sha512"
     },
     {
