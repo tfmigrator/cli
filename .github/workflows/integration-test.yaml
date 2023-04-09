@@ -16,7 +16,7 @@ jobs:
         go-version: 1.20.1
     - run: go build -o /usr/local/bin/tfmigrator ./cmd/tfmigrator
 
-    - uses: aquaproj/aqua-installer@61e2563dfe7674cbf74fe6ec212e444198a3bb00 # v2.0.2
+    - uses: aquaproj/aqua-installer@294926f94b4233f202a2f03875c604f840cfed70 # v2.1.1
       with:
         aqua_version: v2.2.2
       env:
