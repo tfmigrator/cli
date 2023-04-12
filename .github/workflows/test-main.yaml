@@ -9,6 +9,6 @@ permissions: {}
 
 jobs:
   test-main:
-    uses: suzuki-shunsuke/go-test-workflow/.github/workflows/test.yaml@b5eca11eb556672e54d5f0ac6a4d6744630727bd # v0.4.2
+    uses: suzuki-shunsuke/go-test-workflow/.github/workflows/test.yaml@66610a63dfe5160d97e1b68bc53949ceed18e0db # v0.5.0
     permissions:
       pull-requests: write
