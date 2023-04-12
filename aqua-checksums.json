@@ -31,28 +31,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/goreleaser/goreleaser/v1.16.2/goreleaser_Darwin_all.tar.gz",
-      "checksum": "543AB04A60D7EA19DF6342D5DFB11A63F7BAC0BD9D260F3F55AF6E7D51F038CE",
+      "id": "github_release/github.com/goreleaser/goreleaser/v1.17.0/goreleaser_Darwin_all.tar.gz",
+      "checksum": "A15006409DBA5436D88643499E0880C492B915C0A2209400604C71EC2DE137A4",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/goreleaser/goreleaser/v1.16.2/goreleaser_Linux_arm64.tar.gz",
-      "checksum": "24FBED32B0F1F5EAFC2FC5F3E48C1D24FC26682ECA23312083773F1221CAE732",
+      "id": "github_release/github.com/goreleaser/goreleaser/v1.17.0/goreleaser_Linux_arm64.tar.gz",
+      "checksum": "F8B16A7B6E1FAAAB54168A74F8F3524BF20FF5A73FE14B5CAED495FEDD43ED7D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/goreleaser/goreleaser/v1.16.2/goreleaser_Linux_x86_64.tar.gz",
-      "checksum": "8C45B1B1189998F2C75A70E62910343C5E882A7BEBB5CDAB9515640E13E1FACF",
+      "id": "github_release/github.com/goreleaser/goreleaser/v1.17.0/goreleaser_Linux_x86_64.tar.gz",
+      "checksum": "9FB13D0B9611794DA8D71688A50B1F2EA221FCD5F2F4AD529F8B45EE909B2371",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/goreleaser/goreleaser/v1.16.2/goreleaser_Windows_arm64.zip",
-      "checksum": "1290BE78E9E0AA8DF886619C82856DA224BE52CF897EB927F7A30B013DF9D7B4",
+      "id": "github_release/github.com/goreleaser/goreleaser/v1.17.0/goreleaser_Windows_arm64.zip",
+      "checksum": "3C602A0399E02698263AFBB53F0BDAA6012332DF8226AE3ACDC8DFA4FE0C213B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/goreleaser/goreleaser/v1.16.2/goreleaser_Windows_x86_64.zip",
-      "checksum": "9D0817B00447BA152C063EEFEF7036070C062167911A9308F884BA9C8E7DD86C",
+      "id": "github_release/github.com/goreleaser/goreleaser/v1.17.0/goreleaser_Windows_x86_64.zip",
+      "checksum": "0D7297CEE778EFF7696E1E40E92D198394AA953EF584FF7242EB6164A9341D40",
       "algorithm": "sha256"
     },
     {
@@ -186,33 +186,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.4.4/terraform_1.4.4_darwin_amd64.zip",
-      "checksum": "D58CB75C3CC11F9F9290D0015F3E3B63E3E4282CD393A31C694F034D581BAC93F111205D13542CEE80979516179C2BB660220242D6B3F85A168F40C9083A49DC",
+      "id": "http/releases.hashicorp.com/terraform/1.4.5/terraform_1.4.5_darwin_amd64.zip",
+      "checksum": "D199E7D5106CB875C72CDBAAD5A1D8B39524FAAF9CABAFE5B47BF71FBB5152784CA9E2B5E0F0BAC255C76D4170F8B61AAE492EC19456B5B313AB35B82D07B164",
       "algorithm": "sha512"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.4.4/terraform_1.4.4_darwin_arm64.zip",
-      "checksum": "56BB963195476E78A973A61652D9B07C6F3DD9D4E3A4BE2081A383894951891AC204E27D24C076ECE4FF21FB84EE5AD15E64192F716653D01C0127B9CB6E7F86",
+      "id": "http/releases.hashicorp.com/terraform/1.4.5/terraform_1.4.5_darwin_arm64.zip",
+      "checksum": "B14582A069D8ED0BAA1BFF546B9C6629B1F66ACE6FA413285016507A2F1C5F5E75075FC54969B88AC239C50C4E833145D30B4F78D683F7107D492EE23FA72519",
       "algorithm": "sha512"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.4.4/terraform_1.4.4_linux_amd64.zip",
-      "checksum": "4369A2792F5F50F82F9DD03B525398D9FFC316042102DB60A55512B05A2A207DD99843A70AF10C2674197A69C4B67F032453D5E8868552310CE839175E543E95",
+      "id": "http/releases.hashicorp.com/terraform/1.4.5/terraform_1.4.5_linux_amd64.zip",
+      "checksum": "41978EFF3CA018005CC13E2F1D0BB2EBB967AF6013B7F348CA480E9A97E8C1A2110B762FA0161BECD2EA1A9B038DD9693CA5D37476CDB7C846D891E0844F984C",
       "algorithm": "sha512"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.4.4/terraform_1.4.4_linux_arm64.zip",
-      "checksum": "D580AB769B1EFEBE0DD8717F0C7BD35045E83C25C348AD941EAB6BD6B776B329285C689E7880A56DC4105CBF24962DA08F414235BCB55E9D3FC5AB406C88E5D0",
+      "id": "http/releases.hashicorp.com/terraform/1.4.5/terraform_1.4.5_linux_arm64.zip",
+      "checksum": "8864E007EEB114C8613E3A3510BBD05D3E66B77A31D1B94E198969029092FA7BFAB2EC880B40232AD1CF6956A1F2F85CA294E4A8CDF04355F4A2EC20814A5BE4",
       "algorithm": "sha512"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.4.4/terraform_1.4.4_windows_amd64.zip",
-      "checksum": "0919D7FB5A2015C66C0B4725DD561FE68476F90F225C505B5B449DA950D28F8E9A9CEE73464731FF5707498703CE78E794A4E2F185244E59B4523388CF5B1AA9",
+      "id": "http/releases.hashicorp.com/terraform/1.4.5/terraform_1.4.5_windows_amd64.zip",
+      "checksum": "ED4A39FDCB98991F5E4F8B4A12D120B66CD7A33406A0671CB81E9A1891D8C5695BCDE27EDF4224C7E28BA36895020136BD227C58B3663B65E30516C9E431EBC2",
       "algorithm": "sha512"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v3.150.0/registry.yaml",
-      "checksum": "CFA075203D62F4902558665E7ACBB81957E7AD8350204A0B088D2CEBF0C09A4A6E25A15C74B6D253886E458D04E3F0400D94CB82B411209F3CC54740F4655148",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v3.153.0/registry.yaml",
+      "checksum": "0CBBE394EE063F9ACEDBCD489CDBEB69FAD2E59C05158F60400E739125437DBF90D497FAF85ACF2F93CF805924AD71A99AE6056E953D7500DDFDB7B86FE3CFB6",
       "algorithm": "sha512"
     }
   ]
