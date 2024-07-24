@@ -21,7 +21,7 @@ import (
 
 func (ctrl *Controller) Run(ctx context.Context, param *Param) error { //nolint:funlen
 	text.SetTemplateFunc(func(s string) (*template.Template, error) {
-		return template.New("_").Funcs(sprig.TxtFuncMap()).Parse(s) //nolint:wrapcheck
+		return template.New("_").Funcs(sprig.TxtFuncMap()).Parse(s)
 	})
 	cfg := config.Config{}
 	if err := config.Read(param.ConfigFilePath, &cfg); err != nil {
