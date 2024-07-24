@@ -14,7 +14,7 @@ type Controller struct { //nolint:maligned
 	Stderr io.Writer
 }
 
-func New(ctx context.Context, param *Param) (*Controller, *Param, error) {
+func New(_ context.Context, param *Param) (*Controller, *Param, error) {
 	if param.LogLevel != "" {
 		lvl, err := logrus.ParseLevel(param.LogLevel)
 		if err != nil {
