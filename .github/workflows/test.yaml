@@ -5,10 +5,9 @@ on: pull_request
 
 jobs:
   test:
-    uses: suzuki-shunsuke/go-test-full-workflow/.github/workflows/test.yaml@36686a578a29e0d1f0ba71770c23c956663bb009 # v0.2.3
+    uses: suzuki-shunsuke/go-test-full-workflow/.github/workflows/test.yaml@23aa902bce3eb45e7c0b80c34e63c572af5209ce # v1.0.1
     with:
-      aqua_policy_config: aqua-policy.yaml
-      aqua_version: v2.25.0
+      aqua_version: v2.30.0
       go-version: 1.20.1
     secrets:
       gh_app_id: ${{secrets.APP_ID}}
