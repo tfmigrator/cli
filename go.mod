@@ -31,7 +31,6 @@ require (
 	github.com/hashicorp/hcl/v2 v2.10.0 // indirect
 	github.com/hashicorp/terraform-json v0.22.1 // indirect
 	github.com/huandu/xstrings v1.5.0 // indirect
-	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/minamijoyo/hcledit v0.2.0 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
