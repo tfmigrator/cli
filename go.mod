@@ -9,7 +9,7 @@ require (
 	github.com/suzuki-shunsuke/expr-unmarshaler v0.1.0
 	github.com/suzuki-shunsuke/go-template-unmarshaler v0.1.0
 	github.com/tfmigrator/tfmigrator v0.5.1
-	github.com/urfave/cli/v2 v2.27.4
+	github.com/urfave/cli/v2 v2.27.5
 	gopkg.in/yaml.v2 v2.4.0
 )
 
@@ -21,7 +21,7 @@ require (
 	github.com/antonmedv/expr v1.8.9 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.5 // indirect
 	github.com/go-playground/locales v0.13.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-playground/validator/v10 v10.6.1 // indirect
