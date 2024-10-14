@@ -176,6 +176,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/suzuki-shunsuke/ghalint/v1.0.0/ghalint_1.0.0_windows_amd64.zip",
+      "checksum": "F91596B58827BBBBAA6EFD8B5220D2C49547D60E30E7CF797E02A9107A39FF11",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghalint/v1.0.0/ghalint_1.0.0_windows_arm64.zip",
+      "checksum": "77FB1B80BFEFECB2C43098C9BD76BB335435A56E362961E3BD6ED5E18FA471E6",
+      "algorithm": "sha256"
+    },
+    {
       "id": "http/releases.hashicorp.com/terraform/1.9.7/terraform_1.9.7_darwin_amd64.zip",
       "checksum": "C35D5E978F5EDBC398BBC9CCC89840B173C66978E1CDB6FC8A48C5C42346DD55",
       "algorithm": "sha256"
@@ -201,8 +211,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.233.0/registry.yaml",
-      "checksum": "8821D308DAE9E38D827943643EF36750DD3F8B50E7EDAA3C1E69D4AA94C53286",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.234.0/registry.yaml",
+      "checksum": "F0A7C553D14E9F1058F1C3C4E04EEB276B901577FAA2C317F8717B7729B0F75B",
       "algorithm": "sha256"
     }
   ]
