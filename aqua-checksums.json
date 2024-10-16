@@ -186,28 +186,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.7/terraform_1.9.7_darwin_amd64.zip",
-      "checksum": "C35D5E978F5EDBC398BBC9CCC89840B173C66978E1CDB6FC8A48C5C42346DD55",
+      "id": "http/releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_darwin_amd64.zip",
+      "checksum": "BE591E8C59C49D0CFBC7664D24910A4B43840B89D0A4BBCA662149BBF0397E91",
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.7/terraform_1.9.7_darwin_arm64.zip",
-      "checksum": "0CDC2E21D0843A14379414E722806954D78B0439E8A7001F7500276BFC12EED4",
+      "id": "http/releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_darwin_arm64.zip",
+      "checksum": "873D7B925D08578FB6BB9C12C7CD92AE73E289E07C360F2FDD69F9036B7BAAAB",
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.7/terraform_1.9.7_linux_amd64.zip",
-      "checksum": "76A77ED7E785EF354B7F565ABAA990E3E7B5232D3EC4AFB87E0F5A413FCBDAD1",
+      "id": "http/releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_amd64.zip",
+      "checksum": "186E0145F5E5F2EB97CBD785BC78F21BAE4EF15119349F6AD4FA535B83B10DF8",
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.7/terraform_1.9.7_linux_arm64.zip",
-      "checksum": "8FC6F1172FF026ABC4F0C399996FA454E605BFC1DF6793AF82D922A66B5C41F8",
+      "id": "http/releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_arm64.zip",
+      "checksum": "F85868798834558239F6148834884008F2722548F84034C9B0F62934B2D73EBB",
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.7/terraform_1.9.7_windows_amd64.zip",
-      "checksum": "0D0E36DB4CF32AA0CDE20CCDDD0E2E9FE1D132BCBFC5A34F8CE8398A4AE3FE1B",
+      "id": "http/releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_windows_amd64.zip",
+      "checksum": "2667DE56106BC6707968286357E29C20F8DBBB2F429EF57099B04994F82D9684",
       "algorithm": "sha256"
     },
     {
